@@ -1,0 +1,230 @@
+.margin-title {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bar-nav > ul li {
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.mid-nav {
+  text-align: center;
+}
+
+.mid-nav h2 {
+  color: #005376;
+}
+
+.item-nav {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.list-nav a {
+  margin-right: 30px;
+  font-size: 20px;
+  color: #005376;
+}
+
+.list-nav a:hover {
+  border-bottom: solid 2px #005376;
+}
+
+.button-navbar a {
+  text-decoration: none;
+  color: #005376;
+  border-radius: 10px;
+  border: solid 2px #005376;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.button-navbar a:hover {
+  color: #ffffff;
+  background-color: #005376;
+}
+
+.main-post {
+  background: rgb(22,196,174);
+  background: -moz-linear-gradient(90deg, rgba(22,196,174,1) 0%, rgba(165,236,224,1) 73%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(22,196,174,1) 0%, rgba(165,236,224,1) 73%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(22,196,174,1) 0%, rgba(165,236,224,1) 73%, rgba(0,212,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16c4ae",endColorstr="#00d4ff",GradientType=1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.p1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.p2 {
+  font-size: 40px;
+}
+
+.p3 {
+  font-size: 20px;
+}
+
+.main-post-content {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.img-main-post {
+  width: 100%;
+  height: auto;
+}
+
+.content-margin {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.judul-kategori {
+  font-size: 24px;
+}
+
+.kelompok-kategori {
+  margin-bottom: 30px;
+}
+
+.img-accessories {
+  width: 300px;
+  height: 230px;
+}
+
+.img-laptops {
+  width: 320px;
+  height: 320px;
+}
+
+.img-smartphones {
+  width: 200px;
+  height: 250px;
+}
+
+.item-div {
+  background-color: white;
+  border: solid 2px;
+  border-color: #d0d0d0;
+  border-radius: 20px;
+}
+
+.item-div:hover {
+  border: solid 2px;
+  border-color: black;
+  text-decoration: none;
+}
+
+.p-nama {
+  font-weight: bold;
+  color: #000000;
+}
+
+.p-varian {
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.p-harga {
+  font-weight: bold;
+  color: #ff1111;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-content {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-content:hover {
+  color: #009CDF;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+/* barang.php */
+
+.back-button {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.back-button:hover {
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.barang-atas-margin {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.barang-img {
+  min-height: 350px;
+  max-height: 400px;
+  width: auto;
+}
+
+.barang-kategori {
+  font-size: 22px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.barang-nama {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.barang-varian {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.barang-harga {
+  font-weight: bold;
+  font-size: 28px;
+  color: #ff1111;
+}
+
+.barang-spek {
+  font-size: 18px;
+}
+
+.barang-edit {
+  margin-right: 10px;
+}
+
+/* edit.php dan add.php */
+.edit-add-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Memperhalus Slide Ketika Navbar Di-klik */
+html {
+  scroll-behavior: smooth;
+}
