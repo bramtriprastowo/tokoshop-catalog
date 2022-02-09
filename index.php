@@ -12,7 +12,7 @@
   <body>
 
     <?php
-      include_once(__DIR__ . "connect.php");
+      include_once("connect.php");
       $smartphones = mysqli_query($mysqli, "SELECT * FROM barang_dijual JOIN id_kategori ON barang_dijual.id_kategori = id_kategori.id_kategori");
       $laptops = mysqli_query($mysqli, "SELECT * FROM barang_dijual JOIN id_kategori ON barang_dijual.id_kategori = id_kategori.id_kategori");
       $accessories = mysqli_query($mysqli, "SELECT * FROM barang_dijual JOIN id_kategori ON barang_dijual.id_kategori = id_kategori.id_kategori");
