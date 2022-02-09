@@ -1,3 +1,21 @@
+<?php
+  ob_start();
+  include_once("connect.php");
+  $array_kategori = mysqli_query($mysqli, "SELECT * FROM id_kategori");
+
+  $id = $_GET['id'];
+  $item = mysqli_query($mysqli, "SELECT * FROM barang_dijual WHERE id='$id' ");
+
+  while($item_data = mysqli_fetch_array($item)){
+    $id = $item_data['id'];
+    $id_kategori = $item_data['id_kategori'];
+    $nama= $item_data['nama'];
+    $harga = $item_data['harga'];
+    $spek = $item_data['spek'];
+    $link_gambar = $item_data['link_gambar'];
+  }
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,23 +28,6 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
-    <?php
-      include_once("connect.php");
-      $array_kategori = mysqli_query($mysqli, "SELECT * FROM id_kategori");
-
-      $id = $_GET['id'];
-      $item = mysqli_query($mysqli, "SELECT * FROM barang_dijual WHERE id='$id' ");
-
-      while($item_data = mysqli_fetch_array($item)){
-        $id = $item_data['id'];
-        $id_kategori = $item_data['id_kategori'];
-        $nama= $item_data['nama'];
-        $harga = $item_data['harga'];
-        $spek = $item_data['spek'];
-        $link_gambar = $item_data['link_gambar'];
-      }
-     ?>
 
      <div class="container-fluid">
        <div class="row margin-title">
@@ -138,4 +139,6 @@
 
             header("Location:index.php");
     }
+
+    ob_end_flush();
  ?>
