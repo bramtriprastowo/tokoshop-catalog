@@ -111,7 +111,7 @@
     $nama = $_POST['nama'];
     $harga = $_POST['harga'];
     $spek = $_POST['spek'];
-    $ljnk_gambar = $_POST['link_gambar'];
+    $link_gambar = $_POST['link_gambar'];
 
     $insert = mysqli_query($mysqli, "INSERT INTO `barang_dijual`(`id_kategori`, `nama`, `harga`, `spek`, `link_gambar`)
               VALUES('$id_kategori', '$nama', '$harga', '$spek', '$link_gambar'); ");
