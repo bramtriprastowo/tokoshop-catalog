@@ -109,7 +109,7 @@
           while($accessory = mysqli_fetch_array($accessories)){
             if ($accessory['nama_kategori'] == "accessories"){
             echo"
-              <div class=col-sm-6 col-xl-3 item-div'>
+              <div class='col-sm-6 col-xl-3 item-div'>
                 <a href='barang.php?id=".$accessory['id']."'>
                 <img src='".$accessory['link_gambar']."' alt='".$accessory['nama']."' class='img-accessories hover-zoom'>
                 <p class='p-nama'>".$accessory['nama']."</p>
