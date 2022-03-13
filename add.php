@@ -71,7 +71,7 @@
               </tr>
               <tr>
                 <td>Harga Barang (Rp)</td>
-                <td><input type="text" class="form-control" name="harga" autocomplete="off" ></td>
+                <td><input type="text" class="form-control" name="harga" autocomplete="off" placeholder="Contoh = 1500000"></td>
               </tr>
               <tr>
                 <td>Varian</td>
