@@ -11,6 +11,7 @@
     $id_kategori = $item_data['id_kategori'];
     $nama= $item_data['nama'];
     $harga = $item_data['harga'];
+    $varian = $item_data['varian'];
     $spek = $item_data['spek'];
     $link_gambar = $item_data['link_gambar'];
   }
@@ -93,6 +94,10 @@
                 <td><input type="text" class="form-control" name="harga" autocomplete="off" value="<?php echo $harga; ?>"></td>
               </tr>
               <tr>
+                <td>Varian</td>
+                <td><input type="text" class="form-control" name="varian" autocomplete="off" value="<?php echo $varian; ?>"></td>
+              </tr>
+              <tr>
                 <td>Spesifikasi</td>
                 <td><input type="text" class="form-control" name="spek" autocomplete="off" value="<?php echo $spek; ?>"></td>
               </tr>
@@ -131,10 +136,11 @@
     $id_kategori = $_POST['id_kategori'];
     $nama = $_POST['nama'];
     $harga = $_POST['harga'];
+    $varian = $_POST['varian'];
     $spek = $_POST['spek'];
     $link_gambar = $_POST['link_gambar'];
 
-    $insert = mysqli_query($mysqli, "UPDATE barang_dijual SET id_kategori = '$id_kategori', nama = '$nama',
+    $insert = mysqli_query($mysqli, "UPDATE barang_dijual SET id_kategori = '$id_kategori', nama = '$nama', varian = '$varian',
               harga = '$harga', spek = '$spek', link_gambar = '$link_gambar'
               WHERE id = '$id';");
 
