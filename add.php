@@ -74,6 +74,10 @@
                 <td><input type="text" class="form-control" name="harga" autocomplete="off" ></td>
               </tr>
               <tr>
+                <td>Varian</td>
+                <td><input type="text" class="form-control" name="varian" autocomplete="off" ></td>
+              </tr>
+              <tr>
                 <td>Spesifikasi</td>
                 <td><textarea class="form-control" name="spek" maxlength="900" rows="4" autocomplete="off" ></textarea></td>
               </tr>
@@ -111,11 +115,12 @@
     $id_kategori = $_POST['id_kategori'];
     $nama = $_POST['nama'];
     $harga = $_POST['harga'];
+    $varian = $_POST['varian'];
     $spek = $_POST['spek'];
     $link_gambar = $_POST['link_gambar'];
 
-    $insert = mysqli_query($mysqli, "INSERT INTO `barang_dijual`(`id_kategori`, `nama`, `harga`, `spek`, `link_gambar`)
-              VALUES('$id_kategori', '$nama', '$harga', '$spek', '$link_gambar'); ");
+    $insert = mysqli_query($mysqli, "INSERT INTO `barang_dijual`(`id_kategori`, `nama`, `harga`, `varian`, `spek`, `link_gambar`)
+              VALUES('$id_kategori', '$nama', '$harga', '$varian', '$spek', '$link_gambar'); ");
 
     header("Location:index.php");
   }
